@@ -8,233 +8,233 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
         <title>SupaCars</title>
-        <link href="./output.css" rel="stylesheet" />
+        <link href="./dist/output.css" rel="stylesheet" />
     </head>
     <body class="bg-[#FFFFFF]">
-        <nav class="flex max-w-[1280px] mx-auto items-center justify-between pb-[35.8px] pl-[62px] pr-[352px] pt-[34.8px]">
-                <a href="#">
-                    <img src="assets/company-logos/company.svg" alt="company icon" />
-                </a>
-                <ul class="flex items-center gap-x-11">
-                    <li><a href="#" class="font-inter leading-[19px] text-[#2F3137]">Home</a></li>
-                    <li>
-                        <a href="#" class="flex items-center gap-x-2 font-inter leading-[19px] text-[#2F3137]"
-                            >Jual Mobil
-                            <img src="assets/icons/arrow-bottom.svg" alt="arrow bottom icon" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="flex items-center gap-x-2 font-inter leading-[19px] text-[#2F3137]"
-                            >Beli Mobil
-                            <img src="assets/icons/arrow-bottom.svg" alt="arrow bottom icon" />
-                        </a>
-                    </li>
-                </ul>
-                <form action="#" method="get" class="relative flex h-[54.4px] w-[268px] items-center rounded-full border border-[#F0F0F0] bg-[#FAFAFA]">
-                    <input
-                        type="text"
-                        name="query"
-                        placeholder="Search..."
-                        class="h-full w-full rounded-full bg-[#FAFAFA] pl-3 placeholder:font-inter placeholder:font-medium placeholder:leading-[19px] placeholder:text-[#636569]"
+        <nav class="mx-auto flex max-w-[1280px] items-center justify-between pb-[35.8px] pl-[62px] pr-[352px] pt-[34.8px]">
+            <a href="#">
+                <img src="assets/company-logos/company.svg" alt="company icon" />
+            </a>
+            <ul class="flex items-center gap-x-11">
+                <li><a href="#" class="font-inter leading-[19px] text-[#2F3137]">Home</a></li>
+                <li>
+                    <a href="#" class="flex items-center gap-x-2 font-inter leading-[19px] text-[#2F3137]"
+                        >Jual Mobil
+                        <img src="assets/icons/arrow-bottom.svg" alt="arrow bottom icon" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center gap-x-2 font-inter leading-[19px] text-[#2F3137]"
+                        >Beli Mobil
+                        <img src="assets/icons/arrow-bottom.svg" alt="arrow bottom icon" />
+                    </a>
+                </li>
+            </ul>
+            <form action="#" method="get" class="relative flex h-[54.4px] w-[268px] items-center rounded-full border border-[#F0F0F0] bg-[#FAFAFA]">
+                <input
+                    type="text"
+                    name="query"
+                    placeholder="Search..."
+                    class="h-full w-full rounded-full bg-[#FAFAFA] pl-3 placeholder:font-inter placeholder:font-medium placeholder:leading-[19px] placeholder:text-[#636569]"
+                />
+                <button type="submit">
+                    <img
+                        src="assets/icons/search.svg"
+                        alt="search icon"
+                        class="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-[#3775F1] p-2 shadow-[0_4px_15px_-3px_rgba(0,0,0,0.25)]"
                     />
-                    <button type="submit">
-                        <img
-                            src="assets/icons/search.svg"
-                            alt="search icon"
-                            class="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-[#3775F1] p-2 shadow-[0_4px_15px_-3px_rgba(0,0,0,0.25)]"
-                        />
+                </button>
+            </form>
+        </nav>
+        <main>
+            <header>
+                <!-- image car -->
+                <div class="relative h-[546px] w-full">
+                    <img src="assets/images/car1.png" alt="car" class="h-full w-full object-cover" />
+                    <button type="button">
+                        <img src="assets/icons/arrow-right.svg" alt="arrow" class="absolute right-[54px] top-1/2 -translate-y-1/2" />
                     </button>
-                </form>
-            </nav>
-            <main>
-                <header>
-                    <!-- image car -->
-                    <div class="relative h-[546px] w-full">
-                        <img src="assets/images/car1.png" alt="car" class="h-full w-full object-cover" />
-                        <button type="button">
-                            <img src="assets/icons/arrow-right.svg" alt="arrow" class="absolute right-[54px] top-1/2 -translate-y-1/2" />
-                        </button>
 
+                    <div class="absolute bottom-4 left-[368.1px] right-[368.1px]">
                         <div
-                            class="absolute bottom-4 left-[368.1px] right-[368.1px]"
+                            class="mx-auto flex max-w-[543.98px] items-center justify-between rounded-full border-2 border-[rgba(255,255,255,0.12)] bg-[rgba(63,23,23,0.12)] p-3 mix-blend-luminosity backdrop-blur-[10px]"
                         >
-                            <div class="flex items-center justify-between rounded-full border-2 border-[rgba(255,255,255,0.12)] bg-[rgba(63,23,23,0.12)] p-3 mix-blend-luminosity backdrop-blur-[10px] max-w-[543.98px] mx-auto">
-                                <button type="button" class="mix-blend-normal">
-                                    <img src="assets/images/car2.png" alt="car" class="size-[70px]" />
-                                </button>
-                                <button type="button">
-                                    <img src="assets/images/car3.png" alt="car" class="size-[70px]" />
-                                </button>
-                                <button type="button">
-                                    <img src="assets/images/car4.png" alt="car" class="size-[70px]" />
-                                </button>
-                                <button type="button">
-                                    <img src="assets/images/car5.png" alt="car" class="size-[70px]" />
-                                </button>
-                                <button type="button">
-                                    <img src="assets/images/car6.png" alt="car" class="size-[70px]" />
-                                </button>
-                                <button type="button" class="flex size-[70px] items-center justify-center rounded-full bg-[rgba(255,255,255,0.12)]">
-                                    <p class="font-inter text-xl font-medium text-[#FFFFFF]">10+</p>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- title car -->
-                    <div class="max-w-[1280px] pl-[162px] pr-[163px] mx-auto mt-10 ">
-                        <ul class="flex gap-x-4 font-inter text-sm leading-[17px] text-[#97989B]">
-                            <li><a href="#">Home</a></li>
-                            /
-                            <li><a href="#">Search</a></li>
-                            /
-                            <li><a href="#">Results</a></li>
-                            /
-                            <li><a href="#">BMW</a></li>
-                            /
-                            <li><a href="#" class="font-inter text-sm font-bold text-[#2F3137]">4 Series</a></li>
-                        </ul>
-                        <h1 class="mt-9 font-inter text-5xl font-medium leading-[58px] text-[#2F3137]">2018 BMW M4 3.0 Coupe Yellow Edition</h1>
-                        <div class="mt-8 flex items-center gap-x-5">
-                            <h2 class="font-inter text-[44px] font-bold leading-[53px] text-[#2F3137]"><span class="text-[rgba(47,49,55,0.40)]">Rp</span> 1,100,000,000</h2>
-                            <span
-                                class="rounded-full border border-[#3775F1] bg-[rgba(55,117,241,0.05)] px-[14px] py-3 font-inter text-xl font-medium leading-[24px] text-[#3775F1] backdrop-blur-[25px]"
-                                >Negotiable</span
-                            >
-                        </div>
-                    </div>
-                </header>
-
-                <!-- detail 1 -->
-                <section class="mx-auto mt-8 max-w-[1280px] pl-[162px] pr-[163px]">
-                    <div class="flex items-center justify-between rounded-full border border-[#F0F0F0] bg-[rgba(47,49,55,0.015)] py-2 pl-5 pr-3">
-                        <div class="flex items-center gap-x-3">
-                            <img src="assets/icons/published-on.svg" alt="publish icon" />
-                            <p class="font-inter leading-[19px] text-[#7D7E82]">Published on 20/06/2024</p>
-                        </div>
-                        <div class="flex items-center gap-x-6">
-                            <button type="button">
-                                <img src="assets/icons/love.svg" alt="love icon" />
+                            <button type="button" class="mix-blend-normal">
+                                <img src="assets/images/car2.png" alt="car" class="size-[70px]" />
                             </button>
                             <button type="button">
-                                <img src="assets/icons/recycle.svg" alt="recycle icon" />
+                                <img src="assets/images/car3.png" alt="car" class="size-[70px]" />
                             </button>
                             <button type="button">
-                                <img src="assets/icons/more.svg" alt="more icon" />
+                                <img src="assets/images/car4.png" alt="car" class="size-[70px]" />
+                            </button>
+                            <button type="button">
+                                <img src="assets/images/car5.png" alt="car" class="size-[70px]" />
+                            </button>
+                            <button type="button">
+                                <img src="assets/images/car6.png" alt="car" class="size-[70px]" />
+                            </button>
+                            <button type="button" class="flex size-[70px] items-center justify-center rounded-full bg-[rgba(255,255,255,0.12)]">
+                                <p class="font-inter text-xl font-medium text-[#FFFFFF]">10+</p>
                             </button>
                         </div>
                     </div>
-                    <div class="mt-[45px] flex flex-wrap gap-5">
-                        <div class="relative h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
-                            <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
-                                Kondisi<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">Bekas</span>
-                            </p>
-                            <img src="assets/decor/kondisi.svg" alt="kondisi icon" class="absolute right-0 top-0" />
+                </div>
+
+                <!-- title car -->
+                <div class="mx-auto mt-10 max-w-[1280px] pl-[162px] pr-[163px]">
+                    <ul class="flex gap-x-4 font-inter text-sm leading-[17px] text-[#97989B]">
+                        <li><a href="#">Home</a></li>
+                        /
+                        <li><a href="#">Search</a></li>
+                        /
+                        <li><a href="#">Results</a></li>
+                        /
+                        <li><a href="#">BMW</a></li>
+                        /
+                        <li><a href="#" class="font-inter text-sm font-bold text-[#2F3137]">4 Series</a></li>
+                    </ul>
+                    <h1 class="mt-9 font-inter text-5xl font-medium leading-[58px] text-[#2F3137]">2018 BMW M4 3.0 Coupe Yellow Edition</h1>
+                    <div class="mt-8 flex items-center gap-x-5">
+                        <h2 class="font-inter text-[44px] font-bold leading-[53px] text-[#2F3137]"><span class="text-[rgba(47,49,55,0.40)]">Rp</span> 1,100,000,000</h2>
+                        <span
+                            class="rounded-full border border-[#3775F1] bg-[rgba(55,117,241,0.05)] px-[14px] py-3 font-inter text-xl font-medium leading-[24px] text-[#3775F1] backdrop-blur-[25px]"
+                            >Negotiable</span
+                        >
+                    </div>
+                </div>
+            </header>
+
+            <!-- detail 1 -->
+            <section class="mx-auto mt-8 max-w-[1280px] pl-[162px] pr-[163px]">
+                <div class="flex items-center justify-between rounded-full border border-[#F0F0F0] bg-[rgba(47,49,55,0.015)] py-2 pl-5 pr-3">
+                    <div class="flex items-center gap-x-3">
+                        <img src="assets/icons/published-on.svg" alt="publish icon" />
+                        <p class="font-inter leading-[19px] text-[#7D7E82]">Published on 20/06/2024</p>
+                    </div>
+                    <div class="flex items-center gap-x-6">
+                        <button type="button">
+                            <img src="assets/icons/love.svg" alt="love icon" />
+                        </button>
+                        <button type="button">
+                            <img src="assets/icons/recycle.svg" alt="recycle icon" />
+                        </button>
+                        <button type="button">
+                            <img src="assets/icons/more.svg" alt="more icon" />
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-[45px] flex flex-wrap gap-5">
+                    <div class="relative h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
+                        <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
+                            Kondisi<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">Bekas</span>
+                        </p>
+                        <img src="assets/decor/kondisi.svg" alt="kondisi icon" class="absolute right-0 top-0" />
+                    </div>
+                    <div class="relative h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
+                        <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
+                            Tahun<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">2008</span>
+                        </p>
+                        <img src="assets/decor/tahun.svg" alt="tahun icon" class="absolute right-0 top-0" />
+                    </div>
+                    <div class="relative h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
+                        <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
+                            Odo<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">20,000</span>
+                        </p>
+                        <img src="assets/decor/odo.svg" alt="odo icon" class="absolute right-0 top-0" />
+                    </div>
+                    <div class="relative h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
+                        <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
+                            Warna<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">Kuning</span>
+                        </p>
+                        <img src="assets/decor/warna.svg" alt="warna icon" class="absolute right-0 top-0" />
+                    </div>
+                    <div class="relative h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
+                        <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
+                            Mesin<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">1997cc</span>
+                        </p>
+                        <img src="assets/decor/mesin.svg" alt="mesin icon" class="absolute right-0 top-0" />
+                    </div>
+                    <div class="relative h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
+                        <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
+                            Transmisi<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">Auto</span>
+                        </p>
+                        <img src="assets/decor/transmisi.svg" alt="transmisi icon" class="absolute right-0 top-0" />
+                    </div>
+                    <div class="relative h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
+                        <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
+                            Pajak<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">Hidup</span>
+                        </p>
+                        <img src="assets/decor/pajak.svg" alt="pajak icon" class="absolute right-0 top-0" />
+                    </div>
+                    <div class="relative h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
+                        <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
+                            Seat<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">5</span>
+                        </p>
+                        <img src="assets/decor/seat.svg" alt="seat icon" class="absolute right-0 top-0" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- detail 2 -->
+            <section class="mx-auto mb-32 mt-[43px] max-w-[1280px] pl-[162px] pr-[163px]">
+                <div class="rounded-t-[40px] border border-[#F0F0F0]">
+                    <div class="mx-4 mt-4 flex items-center justify-between gap-x-5 rounded-full bg-[rgba(47,49,55,0.035)] px-5 py-4">
+                        <button type="button" class="w-full rounded-full bg-[#FFFFFF] py-4 font-inter text-xl font-semibold leading-6 text-[#2F3137]">Descriptions</button>
+                        <button type="button" class="w-full rounded-full py-4 font-inter text-xl font-semibold leading-6 text-[rgba(47,49,55,0.6)]">
+                            Technical Spesifications
+                        </button>
+                    </div>
+                    <div class="mx-6 mt-6 font-inter text-xl leading-9 text-[#2F3137]">
+                        <p>Spec cars :</p>
+                        <p>-Odo 20K</p>
+                        <p>-Pajak bulan 10</p>
+                        <p>-Nik 2018</p>
+                        <p>-Yellow (warna Favorite)</p>
+                        <br />
+                        <p>Feature Car:</p>
+                        <p>-Speedometer 6WB Digital</p>
+                        <p>-Facelift / LCi luxury edition</p>
+                        <p>-Park sensor + Rear Camera</p>
+                        <p>-Ac dual Zone</p>
+                        <p>-Rear wheel drive</p>
+                        <p>-Widescreen LCD Display</p>
+                        <p>-Auto start stop engine</p>
+                        <p>-Keyless entry</p>
+                        <p>-Auto Brake Hold</p>
+                        <p>-8 speed Automatic Transmission</p>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="fixed bottom-0 left-0 right-0 mx-auto max-w-[1280px] bg-[#FFFFFF] pl-[162px] pr-[163px]">
+                <div class="flex items-center justify-between rounded-t-[32px] border border-[#F0F0F0] px-6 py-[27px]">
+                    <div class="flex items-center gap-x-3">
+                        <img src="assets/images/bmw-motors.png" alt="bmw motors" class="size-16" />
+                        <h3 class="w-[131px] font-inter text-xl font-semibold leading-6 text-[#2F3137]">BMW Motors Jakarta</h3>
+                    </div>
+
+                    <div class="flex items-center gap-x-3">
+                        <div class="inline-flex items-center gap-x-1 rounded-full border border-[rgba(47,49,55,0.08)] bg-[#F9FAFA] px-2 py-[6px]">
+                            <img src="assets/icons/dealer.svg" alt="dealler icon" />
+                            <p class="font-inter text-xs leading-[15px] text-[#2F3137]">Dealer</p>
                         </div>
-                        <div class="relative h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
-                            <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
-                                Tahun<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">2008</span>
-                            </p>
-                            <img src="assets/decor/tahun.svg" alt="tahun icon" class="absolute right-0 top-0" />
+                        <div class="inline-flex items-center gap-x-1 rounded-full border border-[rgba(47,49,55,0.08)] bg-[#F9FAFA] px-2 py-[6px]">
+                            <img src="assets/icons/terverifikasi.svg" alt="terverifikasi icon" />
+                            <p class="font-inter text-xs leading-[15px] text-[#2F3137]">Terverifikasi</p>
                         </div>
-                        <div class="relative h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
-                            <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
-                                Odo<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">20,000</span>
-                            </p>
-                            <img src="assets/decor/odo.svg" alt="odo icon" class="absolute right-0 top-0" />
-                        </div>
-                        <div class="relative h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
-                            <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
-                                Warna<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">Kuning</span>
-                            </p>
-                            <img src="assets/decor/warna.svg" alt="warna icon" class="absolute right-0 top-0" />
-                        </div>
-                        <div class="relative h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
-                            <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
-                                Mesin<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">1997cc</span>
-                            </p>
-                            <img src="assets/decor/mesin.svg" alt="mesin icon" class="absolute right-0 top-0" />
-                        </div>
-                        <div class="relative h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
-                            <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
-                                Transmisi<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">Auto</span>
-                            </p>
-                            <img src="assets/decor/transmisi.svg" alt="transmisi icon" class="absolute right-0 top-0" />
-                        </div>
-                        <div class="relative h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
-                            <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
-                                Pajak<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">Hidup</span>
-                            </p>
-                            <img src="assets/decor/pajak.svg" alt="pajak icon" class="absolute right-0 top-0" />
-                        </div>
-                        <div class="relative h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
-                            <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
-                                Seat<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">5</span>
-                            </p>
-                            <img src="assets/decor/seat.svg" alt="seat icon" class="absolute right-0 top-0" />
+                        <div class="inline-flex items-center gap-x-1 rounded-full border border-[rgba(47,49,55,0.08)] bg-[#F9FAFA] px-2 py-[6px]">
+                            <img src="assets/icons/jakarta-selatan.svg" alt="dealler icon" />
+                            <p class="font-inter text-xs leading-[13px] text-[#2F3137]">Jakarta Selatan</p>
                         </div>
                     </div>
-                </section>
 
-                <!-- detail 2 -->
-                <section class="mx-auto mb-32 mt-[43px] max-w-[1280px] pl-[162px] pr-[163px]">
-                    <div class="rounded-t-[40px] border border-[#F0F0F0]">
-                        <div class="mx-4 mt-4 flex items-center justify-between gap-x-5 rounded-full bg-[rgba(47,49,55,0.035)] px-5 py-4">
-                            <button type="button" class="w-full rounded-full bg-[#FFFFFF] py-4 font-inter text-xl font-semibold leading-6 text-[#2F3137]">Descriptions</button>
-                            <button type="button" class="w-full rounded-full py-4 font-inter text-xl font-semibold leading-6 text-[rgba(47,49,55,0.6)]">
-                                Technical Spesifications
-                            </button>
-                        </div>
-                        <div class="mx-6 mt-6 font-inter text-xl leading-9 text-[#2F3137]">
-                            <p>Spec cars :</p>
-                            <p>-Odo 20K</p>
-                            <p>-Pajak bulan 10</p>
-                            <p>-Nik 2018</p>
-                            <p>-Yellow (warna Favorite)</p>
-                            <br />
-                            <p>Feature Car:</p>
-                            <p>-Speedometer 6WB Digital</p>
-                            <p>-Facelift / LCi luxury edition</p>
-                            <p>-Park sensor + Rear Camera</p>
-                            <p>-Ac dual Zone</p>
-                            <p>-Rear wheel drive</p>
-                            <p>-Widescreen LCD Display</p>
-                            <p>-Auto start stop engine</p>
-                            <p>-Keyless entry</p>
-                            <p>-Auto Brake Hold</p>
-                            <p>-8 speed Automatic Transmission</p>
-                        </div>
+                    <div class="flex items-center gap-x-8">
+                        <button type="button"><img src="assets/icons/love-footer.svg" alt="love icon" /></button>
+                        <a href="#" class="rounded-full bg-[#3775F1] px-16 py-5 font-inter font-bold leading-5 text-[#FFFFFF]">Contact</a>
                     </div>
-                </section>
-
-                <footer class="fixed bottom-0 left-0 right-0 mx-auto max-w-[1280px] pl-[162px] pr-[163px] bg-[#FFFFFF]">
-                    <div class="flex items-center justify-between rounded-t-[32px] border border-[#F0F0F0] px-6 py-[27px]">
-                        <div class="flex items-center gap-x-3">
-                            <img src="assets/images/bmw-motors.png" alt="bmw motors" class="size-16" />
-                            <h3 class="w-[131px] font-inter text-xl font-semibold leading-6 text-[#2F3137]">BMW Motors Jakarta</h3>
-                        </div>
-
-                        <div class="flex items-center gap-x-3">
-                            <div class="inline-flex items-center gap-x-1 rounded-full border border-[rgba(47,49,55,0.08)] bg-[#F9FAFA] px-2 py-[6px]">
-                                <img src="assets/icons/dealer.svg" alt="dealler icon" />
-                                <p class="font-inter text-xs leading-[15px] text-[#2F3137]">Dealer</p>
-                            </div>
-                            <div class="inline-flex items-center gap-x-1 rounded-full border border-[rgba(47,49,55,0.08)] bg-[#F9FAFA] px-2 py-[6px]">
-                                <img src="assets/icons/terverifikasi.svg" alt="terverifikasi icon" />
-                                <p class="font-inter text-xs leading-[15px] text-[#2F3137]">Terverifikasi</p>
-                            </div>
-                            <div class="inline-flex items-center gap-x-1 rounded-full border border-[rgba(47,49,55,0.08)] bg-[#F9FAFA] px-2 py-[6px]">
-                                <img src="assets/icons/jakarta-selatan.svg" alt="dealler icon" />
-                                <p class="font-inter text-xs leading-[13px] text-[#2F3137]">Jakarta Selatan</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center gap-x-8">
-                            <button type="button"><img src="assets/icons/love-footer.svg" alt="love icon" /></button>
-                            <a href="#" class="rounded-full bg-[#3775F1] px-16 py-5 font-inter font-bold leading-5 text-[#FFFFFF]">Contact</a>
-                        </div>
-                    </div>
-                </footer>
-            </main>
+                </div>
+            </footer>
+        </main>
     </body>
 </html>
