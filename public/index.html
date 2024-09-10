@@ -49,21 +49,34 @@
         </nav>
         <main>
             <header>
-                <!-- carosel -->
-                <div class="swiper mySwiper relative h-[546px] w-full">
-                    <div class="swiper-wrapper">
-                        <img src="assets/images/car1.png" alt="car" class="swiper-slide h-full w-full object-cover" />
-                        <img src="assets/images/car2.png" alt="car" class="swiper-slide h-full w-full object-cover" />
-                        <img src="assets/images/car3.png" alt="car" class="swiper-slide h-full w-full object-cover" />
-                        <img src="assets/images/car4.png" alt="car" class="swiper-slide h-full w-full object-cover" />
-                        <img src="assets/images/car5.png" alt="car" class="swiper-slide h-full w-full object-cover" />
-                        <img src="assets/images/10+.png" alt="car" class="swiper-slide h-full w-full object-cover" />
+                <div class="relative">
+                    <!-- carosel -->
+                    <div class="swiper mySwiper relative h-[546px] w-full">
+                        <div class="swiper-wrapper">
+                            <img src="assets/images/car1.png" alt="car" class="swiper-slide h-full w-full object-cover" />
+                            <img src="assets/images/car2.png" alt="car" class="swiper-slide h-full w-full object-cover" />
+                            <img src="assets/images/car3.png" alt="car" class="swiper-slide h-full w-full object-cover" />
+                            <img src="assets/images/car4.png" alt="car" class="swiper-slide h-full w-full object-cover" />
+                            <img src="assets/images/car5.png" alt="car" class="swiper-slide h-full w-full object-cover" />
+                            <img src="assets/images/10+.png" alt="car" class="swiper-slide h-full w-full object-cover" />
+                        </div>
+                        <div class="absolute bottom-4 left-1/2 w-full">
+                            <div
+                                class="swiper-pagination flex max-w-[543.98px] -translate-x-1/2 items-center justify-between rounded-full border-2 border-[rgba(255,255,255,0.12)] bg-[rgba(63,23,23,0.12)] p-3 backdrop-blur-[10px]"
+                            ></div>
+                        </div>
+
+                        <img src="assets/icons/arrow-right.svg" alt="arrow" class="swiper-button-prev absolute left-[54px] top-1/2 size-[60px] -translate-y-1/2 rotate-180" />
+                        <img src="assets/icons/arrow-right.svg" alt="arrow" class="swiper-button-next absolute right-[54px] top-1/2 size-[60px] -translate-y-1/2" />
                     </div>
-                    <div class="absolute bottom-4 left-1/2 w-full">
-                        <div class="swiper-pagination flex max-w-[543.98px] -translate-x-1/2 items-center justify-between rounded-full border-2 border-[rgba(255,255,255,0.12)] bg-[rgba(63,23,23,0.12)] p-3 backdrop-blur-[10px]"></div>
-                    </div>
-                    <img src="assets/icons/arrow-right.svg" alt="arrow" class="swiper-button-prev absolute left-[54px] top-1/2 size-[60px] -translate-y-1/2 rotate-180" />
-                    <img src="assets/icons/arrow-right.svg" alt="arrow" class="swiper-button-next absolute right-[54px] top-1/2 size-[60px] -translate-y-1/2" />
+
+                    <button
+                        type="button"
+                        class="absolute bottom-9 left-1/2 z-20 ml-[222px] aspect-square size-[70px] -translate-x-1/2 rounded-full opacity-100"
+                        onclick="window.location.href='#'"
+                    >
+                        <img src="assets/images/10+.png" alt="car" class="rounded-full" />
+                    </button>
                 </div>
 
                 <!-- title -->
@@ -253,11 +266,13 @@
             const swiper = new Swiper(".mySwiper", {
                 slidesPerView: 1,
                 spaceBetween: 10,
+
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
                     bulletClass: "custom-bullet",
                     bulletActiveClass: "custom-bullet-active",
+
                     renderBullet: function (index, className) {
                         const images = [
                             "assets/images/car1child.png",
@@ -268,7 +283,7 @@
                             "assets/images/10+.png",
                         ];
                         if (index === images.length - 1) {
-                            return `<button type="button" class="${className}" onclick="window.location.href='/detail'">
+                            return `<button type="button" class="${className}" onclick="window.location.href='#'">
                             <img src="${images[index]}" alt="car" class="mix-blend-luminosity rounded-full"/>
                         </button>`;
                         } else {
