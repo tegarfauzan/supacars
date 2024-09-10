@@ -227,7 +227,7 @@
                 </div>
             </section>
 
-            <footer class="fixed bottom-0 left-0 right-0 mx-auto max-w-[1280px] px-6 z-30">
+            <footer class="fixed bottom-0 left-0 right-0 z-30 mx-auto max-w-[1280px] px-6">
                 <div class="mx-auto max-w-[955px]">
                     <div class="flex items-center justify-between rounded-t-[32px] border border-[#F0F0F0] bg-[#FFFFFF] px-6 py-[27px]">
                         <div class="flex items-center gap-x-3">
@@ -258,69 +258,7 @@
                 </div>
             </footer>
         </main>
-
-        <!-- karosel -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <!-- inisialiasi swapper -->
-        <script>
-            const swiper = new Swiper(".mySwiper", {
-                slidesPerView: 1,
-                spaceBetween: 10,
-
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                    bulletClass: "custom-bullet",
-                    bulletActiveClass: "custom-bullet-active",
-
-                    renderBullet: function (index, className) {
-                        const images = [
-                            "assets/images/car1child.png",
-                            "assets/images/car2child.png",
-                            "assets/images/car3child.png",
-                            "assets/images/car4child.png",
-                            "assets/images/car5child.png",
-                            "assets/images/10+.png",
-                        ];
-                        if (index === images.length - 1) {
-                            return `<button type="button" class="${className}" onclick="window.location.href='#'">
-                            <img src="${images[index]}" alt="car" class="mix-blend-luminosity rounded-full"/>
-                        </button>`;
-                        } else {
-                            return `<button type="button" class="${className}">
-                            <img src="${images[index]}" alt="car" class="mix-blend-luminosity rounded-full"/>
-                        </button>`;
-                        }
-                    },
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                loop: false,
-            });
-        </script>
-
-        <!-- tabs -->
-        <script>
-            const tabs = document.querySelectorAll(".tab-button");
-            const contents = document.querySelectorAll(".content");
-
-            tabs.forEach((tab, index) => {
-                tab.addEventListener("click", () => {
-                    tabs.forEach((t) => {
-                        t.classList.remove("active-tab", "bg-[#FFFFFF]", "text-[#2F3137]");
-                        t.classList.add("text-[rgba(47,49,55,0.6)]");
-                    });
-
-                    contents.forEach((c) => c.classList.add("hidden"));
-
-                    tab.classList.add("active-tab", "bg-[#FFFFFF]", "text-[#2F3137]");
-                    tab.classList.remove("text-[rgba(47,49,55,0.6)]");
-
-                    contents[index].classList.remove("hidden");
-                });
-            });
-        </script>
+        <script src="js/main.js"></script>
     </body>
 </html>
