@@ -7,7 +7,7 @@
 }
 
 .custom-bullet:last-child {
-    @apply bg-transparent invisible;
+    @apply bg-transparent pointer-events-none;
 }
 
 .custom-bullet-active {
