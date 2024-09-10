@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    let previousIndex = 0; // Menyimpan index sebelumnya di luar event listener
     const swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 10,
@@ -36,14 +37,16 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: false,
         on: {
             slideChange: function () {
-                const nextButton = document.querySelector(".swiper-button-next");
-                if (this.activeIndex === 4) {
-                    nextButton.classList.add("pointer-events-none");
-                    this.allowTouchMove = false;
-                } else if (this.activeIndex < 4) {
-                    nextButton.classList.remove("pointer-events-none");
+                const currentIndex = this.activeIndex; // Mendapatkan indeks slide aktif saat ini
+                // Jika di slide ke-4 dan menggeser ke kanan
+                if (currentIndex === 5) {
+                    this.slideTo(0); // Kembali ke slide ke-0
+                } else {
                     this.allowTouchMove = true;
                 }
+
+                // Update previousIndex setelah slide berubah
+                previousIndex = currentIndex;
             },
         },
     });
