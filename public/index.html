@@ -53,10 +53,11 @@
                 <div class="swiper mySwiper relative h-[546px] w-full">
                     <div class="swiper-wrapper">
                         <img src="assets/images/car1.png" alt="car" class="swiper-slide h-full w-full object-cover" />
-                        <img src="assets/images/car1.png" alt="car" class="swiper-slide h-full w-full object-cover" />
-                        <img src="assets/images/car1.png" alt="car" class="swiper-slide h-full w-full object-cover" />
-                        <img src="assets/images/car1.png" alt="car" class="swiper-slide h-full w-full object-cover" />
-                        <img src="assets/images/car1.png" alt="car" class="swiper-slide h-full w-full object-cover" />
+                        <img src="assets/images/car2.png" alt="car" class="swiper-slide h-full w-full object-cover" />
+                        <img src="assets/images/car3.png" alt="car" class="swiper-slide h-full w-full object-cover" />
+                        <img src="assets/images/car4.png" alt="car" class="swiper-slide h-full w-full object-cover" />
+                        <img src="assets/images/car5.png" alt="car" class="swiper-slide h-full w-full object-cover" />
+                        <img src="assets/images/10+.png" alt="car" class="swiper-slide h-full w-full object-cover" />
                     </div>
                     <div class="absolute bottom-4 left-1/2 w-full">
                         <div
@@ -261,24 +262,29 @@
                     bulletActiveClass: "custom-bullet-active",
                     renderBullet: function (index, className) {
                         const images = [
-                            "assets/images/car2.png",
-                            "assets/images/car3.png",
-                            "assets/images/car4.png",
-                            "assets/images/car5.png",
+                            "assets/images/car1child.png",
+                            "assets/images/car2child.png",
+                            "assets/images/car3child.png",
+                            "assets/images/car4child.png",
+                            "assets/images/car5child.png",
                             "assets/images/10+.png",
-                            "assets/images/car6.png",
                         ];
-                        return `<button type="button" class="${className}">
-                                        <img src="${images[index]}" alt="car" class="mix-blend-luminosity"/>
-                                </button>
-                                `;
+                        if (index === images.length - 1) {
+                            return `<button type="button" class="${className}" onclick="window.location.href='/detail'">
+                            <img src="${images[index]}" alt="car" class="mix-blend-luminosity rounded-full"/>
+                        </button>`;
+                        } else {
+                            return `<button type="button" class="${className}">
+                            <img src="${images[index]}" alt="car" class="mix-blend-luminosity rounded-full"/>
+                        </button>`;
+                        }
                     },
                 },
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                 },
-                loop: true,
+                loop: false,
             });
         </script>
 
