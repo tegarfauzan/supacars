@@ -7,8 +7,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+        <!-- karosel -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <title>SupaCars</title>
-        <link href="./dist/output.css" rel="stylesheet" />
+        <link href="./output.css" rel="stylesheet" />
     </head>
     <body class="bg-[#FFFFFF]">
         <nav class="mx-auto flex max-w-[1280px] items-center justify-between pb-[35.8px] pl-[62px] pr-[352px] pt-[34.8px]">
@@ -47,40 +49,25 @@
         </nav>
         <main>
             <header>
-                <!-- image car -->
-                <div class="relative h-[546px] w-full">
-                    <img src="assets/images/car1.png" alt="car" class="h-full w-full object-cover" />
-                    <button type="button">
-                        <img src="assets/icons/arrow-right.svg" alt="arrow" class="absolute right-[54px] top-1/2 -translate-y-1/2" />
-                    </button>
-
-                    <div class="absolute bottom-4 left-[368.1px] right-[368.1px]">
-                        <div
-                            class="mx-auto flex max-w-[543.98px] items-center justify-between rounded-full border-2 border-[rgba(255,255,255,0.12)] bg-[rgba(63,23,23,0.12)] p-3 mix-blend-luminosity backdrop-blur-[10px]"
-                        >
-                            <button type="button" class="aspect-square size-[70px] mix-blend-normal">
-                                <img src="assets/images/car2.png" alt="car" />
-                            </button>
-                            <button type="button" class="aspect-square size-[70px]">
-                                <img src="assets/images/car3.png" alt="car" />
-                            </button>
-                            <button type="button" class="aspect-square size-[70px]">
-                                <img src="assets/images/car4.png" alt="car" />
-                            </button>
-                            <button type="button " class="aspect-square size-[70px]">
-                                <img src="assets/images/car5.png" alt="car" />
-                            </button>
-                            <button type="button" class="aspect-square size-[70px]">
-                                <img src="assets/images/car6.png" alt="car" />
-                            </button>
-                            <button type="button" class="aspect-square size-[70px]">
-                                <img src="assets/icons/10+.svg" alt="10+" />
-                            </button>
-                        </div>
+                <!-- carosel -->
+                <div class="swiper mySwiper relative h-[546px] w-full">
+                    <div class="swiper-wrapper">
+                        <img src="assets/images/car1.png" alt="car" class="swiper-slide h-full w-full object-cover" />
+                        <img src="assets/images/car1.png" alt="car" class="swiper-slide h-full w-full object-cover" />
+                        <img src="assets/images/car1.png" alt="car" class="swiper-slide h-full w-full object-cover" />
+                        <img src="assets/images/car1.png" alt="car" class="swiper-slide h-full w-full object-cover" />
+                        <img src="assets/images/car1.png" alt="car" class="swiper-slide h-full w-full object-cover" />
                     </div>
+                    <div class="absolute bottom-4 left-1/2 w-full">
+                        <div
+                            class="swiper-pagination flex max-w-[543.98px] -translate-x-1/2 items-center justify-between rounded-full border-2 border-[rgba(255,255,255,0.12)] bg-[rgba(63,23,23,0.12)] p-3 backdrop-blur-[10px]"
+                        ></div>
+                    </div>
+                    <img src="assets/icons/arrow-right.svg" alt="arrow" class="swiper-button-prev absolute left-[54px] top-1/2 size-[60px] -translate-y-1/2 rotate-180" />
+                    <img src="assets/icons/arrow-right.svg" alt="arrow" class="swiper-button-next absolute right-[54px] top-1/2 size-[60px] -translate-y-1/2" />
                 </div>
 
-                <!-- title car -->
+                <!-- title -->
                 <div class="mx-auto mt-10 max-w-[1280px] px-6">
                     <div class="mx-auto max-w-[955px]">
                         <ul class="flex gap-x-4 font-inter text-sm leading-[17px] text-[#97989B]">
@@ -124,49 +111,49 @@
                         </div>
                     </div>
                     <div class="mt-[45px] flex flex-wrap gap-5">
-                        <div class="relative overflow-hidden h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
+                        <div class="relative h-[91px] w-[145px] overflow-hidden rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
                             <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
                                 Kondisi<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">Bekas</span>
                             </p>
                             <img src="assets/decor/kondisi.svg" alt="kondisi icon" class="absolute right-0 top-0" />
                         </div>
-                        <div class="relative overflow-hidden h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
+                        <div class="relative h-[91px] w-[145px] overflow-hidden rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
                             <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
                                 Tahun<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">2008</span>
                             </p>
                             <img src="assets/decor/tahun.svg" alt="tahun icon" class="absolute right-0 top-0" />
                         </div>
-                        <div class="relative overflow-hidden h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
+                        <div class="relative h-[91px] w-[145px] overflow-hidden rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
                             <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
                                 Odo<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">20,000</span>
                             </p>
                             <img src="assets/decor/odo.svg" alt="odo icon" class="absolute right-0 top-0" />
                         </div>
-                        <div class="relative overflow-hidden h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
+                        <div class="relative h-[91px] w-[145px] overflow-hidden rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
                             <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
                                 Warna<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">Kuning</span>
                             </p>
                             <img src="assets/decor/warna.svg" alt="warna icon" class="absolute right-0 top-0" />
                         </div>
-                        <div class="relative overflow-hidden h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
+                        <div class="relative h-[91px] w-[145px] overflow-hidden rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
                             <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
                                 Mesin<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">1997cc</span>
                             </p>
                             <img src="assets/decor/mesin.svg" alt="mesin icon" class="absolute right-0 top-0" />
                         </div>
-                        <div class="relative overflow-hidden h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
+                        <div class="relative h-[91px] w-[145px] overflow-hidden rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
                             <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
                                 Transmisi<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">Auto</span>
                             </p>
                             <img src="assets/decor/transmisi.svg" alt="transmisi icon" class="absolute right-0 top-0" />
                         </div>
-                        <div class="relative overflow-hidden h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
+                        <div class="relative h-[91px] w-[145px] overflow-hidden rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
                             <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
                                 Pajak<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">Hidup</span>
                             </p>
                             <img src="assets/decor/pajak.svg" alt="pajak icon" class="absolute right-0 top-0" />
                         </div>
-                        <div class="relative overflow-hidden h-[91px] w-[145px] rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
+                        <div class="relative h-[91px] w-[145px] overflow-hidden rounded-xl border border-[rgba(47,49,55,0.05)] bg-[rgba(47,49,55,0.02)]">
                             <p class="py-5 pl-6 font-inter text-lg leading-[22px] text-[#8F9499]">
                                 Seat<br /><span class="font-inter text-2xl font-semibold leading-[29px] text-[#2F3137]">5</span>
                             </p>
@@ -180,17 +167,38 @@
             <section class="mx-auto mb-32 mt-[43px] max-w-[1280px] px-6">
                 <div class="mx-auto max-w-[955px] rounded-t-[40px] border border-[#F0F0F0] px-4">
                     <div class="mt-4 flex items-center justify-between gap-x-5 rounded-full bg-[rgba(47,49,55,0.035)] px-5 py-4">
-                        <button type="button" class="w-full rounded-full bg-[#FFFFFF] py-4 font-inter text-xl font-semibold leading-6 text-[#2F3137]">Descriptions</button>
-                        <button type="button" class="w-full rounded-full py-4 font-inter text-xl font-semibold leading-6 text-[rgba(47,49,55,0.6)]">
+                        <button type="button" class="tab-button active-tab w-[432px] rounded-full bg-[#FFFFFF] py-4 font-inter text-xl font-semibold leading-6 text-[#2F3137]">
+                            Descriptions
+                        </button>
+                        <button type="button" class="tab-button w-[432px] rounded-full py-4 font-inter text-xl font-semibold leading-6 text-[rgba(47,49,55,0.6)]">
                             Technical Spesifications
                         </button>
                     </div>
-                    <div class="mx-2 mt-6 font-inter text-xl leading-9 text-[#2F3137]">
+                    <div class="content mx-2 mt-6 font-inter text-xl leading-9 text-[#2F3137]">
                         <p>Spec cars :</p>
                         <p>-Odo 20K</p>
                         <p>-Pajak bulan 10</p>
                         <p>-Nik 2018</p>
                         <p>-Yellow (warna Favorite)</p>
+                        <br />
+                        <p>Feature Car:</p>
+                        <p>-Speedometer 6WB Digital</p>
+                        <p>-Facelift / LCi luxury edition</p>
+                        <p>-Park sensor + Rear Camera</p>
+                        <p>-Ac dual Zone</p>
+                        <p>-Rear wheel drive</p>
+                        <p>-Widescreen LCD Display</p>
+                        <p>-Auto start stop engine</p>
+                        <p>-Keyless entry</p>
+                        <p>-Auto Brake Hold</p>
+                        <p>-8 speed Automatic Transmission</p>
+                    </div>
+                    <div class="content mx-2 mt-6 hidden font-inter text-xl leading-9 text-[#2F3137]">
+                        <p>Spec cars2 :</p>
+                        <p>-Odo 20K2</p>
+                        <p>-Pajak bulan 102</p>
+                        <p>-Nik 20182</p>
+                        <p>-Yellow (warna Favorite)2</p>
                         <br />
                         <p>Feature Car:</p>
                         <p>-Speedometer 6WB Digital</p>
@@ -238,5 +246,62 @@
                 </div>
             </footer>
         </main>
+
+        <!-- karosel -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- inisialiasi swapper -->
+        <script>
+            const swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    bulletClass: "custom-bullet",
+                    bulletActiveClass: "custom-bullet-active",
+                    renderBullet: function (index, className) {
+                        const images = [
+                            "assets/images/car2.png",
+                            "assets/images/car3.png",
+                            "assets/images/car4.png",
+                            "assets/images/car5.png",
+                            "assets/images/10+.png",
+                            "assets/images/car6.png",
+                        ];
+                        return `<button type="button" class="${className}">
+                                        <img src="${images[index]}" alt="car" class="mix-blend-luminosity"/>
+                                </button>
+                                `;
+                    },
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                loop: true,
+            });
+        </script>
+
+        <!-- tabs -->
+        <script>
+            const tabs = document.querySelectorAll(".tab-button");
+            const contents = document.querySelectorAll(".content");
+
+            tabs.forEach((tab, index) => {
+                tab.addEventListener("click", () => {
+                    tabs.forEach((t) => {
+                        t.classList.remove("active-tab", "bg-[#FFFFFF]", "text-[#2F3137]");
+                        t.classList.add("text-[rgba(47,49,55,0.6)]");
+                    });
+
+                    contents.forEach((c) => c.classList.add("hidden"));
+
+                    tab.classList.add("active-tab", "bg-[#FFFFFF]", "text-[#2F3137]");
+                    tab.classList.remove("text-[rgba(47,49,55,0.6)]");
+
+                    contents[index].classList.remove("hidden");
+                });
+            });
+        </script>
     </body>
 </html>

@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-bullet {
+    @apply aspect-square size-[70px] rounded-full bg-white;
+}
+
+.custom-bullet:last-child {
+    @apply bg-transparent;
+}
+
+.custom-bullet-active {
+    @apply rounded-full bg-transparent;
+}
